@@ -18,5 +18,16 @@ pipeline {
 	echo "Integration test"}
 }
 }
+post{
+	always{
+		echo 'I run always'
+	}
+	success{
+		echo 'I run when successful'
+	}
+	failure{
+		echo 'I run when failed'
+	}
+}
 }
 //scripted and declarative
